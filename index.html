@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -13,13 +14,13 @@
         <header>
             <div class="navbar">
                 <div class="brand">
-                    <h2>Portafolio</h2>
+                    <h1>Portafolio</h1>
                 </div>
                 <ul class="menu">
                     <li class="active">Inicio</li>
-                    <li>Quien Soy</li>
-                    <li>Portafolio</li>
-                    <li>Contacto</li>
+                    <li><a href="#quien">Quien Soy</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </header>
@@ -27,30 +28,38 @@
             <div class="info-content">
                 <h1>Soy Ruben Flores Lima</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-                    eaque!
+                    Estudiante de la Carrera de Ingenieria de Sistemas 2023
                 </p>
-                <a download href="#"> <button class="download-cv">Numero de Contacto</button></a>
+                <a download href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                    class="bank"> <button class="download-cv">Numero de
+                        Contacto</button></a>
             </div>
             <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/pexels-photo-1516680-removebg-preview_f7yxxl.png"
                 alt="" />
         </div>
     </div>
-    <div class="sobre-mi">
+    <!-- SOBRE MI -->
+    <div class="sobre-mi" id="quien">
         <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/about_grtker.png"
             alt="">
         <div class="about-info">
             <h2>Sobre MI</h2>
             <div class="divider"></div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, temporibus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolores magni adipisci quam labore
-                similique?</p>
-            <button class="download-cv">Mas Sobre Mi</button>
+            <h3>DESARROLLADOR JUNIO</h3>
+            <ol class="detalle">
+                <li>PROFESION: <span>Analista de Sistemas</span></li>
+                <li>NACIONALIDAD: <span>Boliviano</span></li>
+                <li>CORREO ELECTRONICO: <span>rubiflawer@gmail.com</span></li>
+                <li>DIRECCION: <span>BARRIO ESPAÑA S/N</span></li>
+                <li>CELULAR: <span>77112930</span></li>
+            </ol>
+            <a download href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                class="bank"> <button class="download-cv">Mas sobre mi</button></a>
         </div>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portafolio">
         <div class="portfolio-heading">
-            <h2>My Portfolio</h2>
+            <h2>Mi Portfolio</h2>
             <div class="divider"></div>
         </div>
         <div class="container">
@@ -58,7 +67,7 @@
                 <div class="card-img">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>Diseño de Páginas WEB</h2>
                 </div>
                 <div class="card__proyect-links">
                     <a href="#">
@@ -72,16 +81,16 @@
                     </a>
                 </div>
                 <div class="button-content">
-                    <button class="project-details-button download-cv">
-                        <a href="#">Project Details</a>
-                    </button>
+                    <a download
+                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                        class="bank"> <button class="download-cv">Contactanos</button></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>Diseño de Base de DATOS</h2>
                 </div>
                 <div class="card__proyect-links">
                     <a href="#">
@@ -95,16 +104,16 @@
                     </a>
                 </div>
                 <div class="button-content">
-                    <button class="project-details-button download-cv">
-                        <a href="#">Project Details</a>
-                    </button>
+                    <a download
+                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                        class="bank"> <button class="download-cv">Contactanos</button></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>Maquetacion WEB</h2>
                 </div>
                 <div class="card__proyect-links">
                     <a href="#">
@@ -118,29 +127,32 @@
                     </a>
                 </div>
                 <div class="button-content">
-                    <button class="project-details-button download-cv">
-                        <a href="#">Project Details</a>
-                    </button>
+                    <a download
+                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                        class="bank"> <button class="download-cv">Contactanos</button></a>
                 </div>
             </div>
         </div>
+
     </div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contacto">
         <div class="contact-heading">
-            <h2>Keep in touch</h2>
+            <h2>CONTACTAME</h2>
             <div class="divider"></div>
         </div>
         <div class="container-contact">
             <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png"
                 alt="">
             <div class="contact-form">
-                <h4>Send me a message...</h4>
+                <h4>Enviame un Mensaje</h4>
                 <form class="form-group">
-                    <input type="text" placeholder="Name" class="input">
+                    <input type="text" placeholder="Nombre" class="input">
                     <input type="email" placeholder="Email" class="input">
-                    <textarea name="message" placeholder="Place your message here..."></textarea>
-                    <button type="submit" class="btn-submit">Send message</button>
+                    <textarea name="message" placeholder="por favor escriba su mensaje"></textarea>
+                    <a download
+                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                        class="bank"> <button class="download-cv">Enviar Mensaje</button></a>
                 </form>
             </div>
         </div>
@@ -148,13 +160,14 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <h2>John Carter</h2>
-            <h5>Frontend Developer</h5>
+            <h2>Ruben Flores Lima</h2>
+            <h5>Desarrollador JUNIOR</h5>
         </div>
         <div class="sotial-networks">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter-square"></i>
+            <a href="facebook.com/rubenherson.floreslima" class="bank"></a><i class="fa-brands fa-facebook"></i>
+            <a href="facebook.com/rubenherson.floreslima" class="bank"></a><i class="fa-brands fa-instagram"></i>
+            <a href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                class="bank"></a><i class="fa-brands fa-whatsapp"></i>
         </div>
     </footer>
 </body>
