@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 .wrapper {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #191c32;
   color: white;
 }
-
+.toggle-menu,
+.info-content__subtitle,
+.info-content .sotial-networks {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -21,7 +25,6 @@
 .brand:hover {
   color: white;
   cursor: pointer;
-  font-size: 18px;
 }
 
 .menu {
@@ -126,13 +129,13 @@
   margin-top: 5px;
 }
 /* mi Portafolio */
-.portafolio,
+.portfolio,
 .contact-section {
   width: 100vw;
   background-color: #191c32;
   color: white;
 }
-.portafolio-heading {
+.portfolio-heading {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -145,11 +148,11 @@
 
 .portfolio .container {
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -416,3 +419,88 @@
   font-size: 1.5em;
 }
 /* RESPONSIVE*/
+
+@media screen and (max-width: 800px) {
+
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #2b3058;
+    z-index: 100;
+    transform: translateX(-110%);
+    transition: all .5s ease-in-out;
+  }
+
+  .show-menu {
+    transform: translateX(0%);
+    transition: all .5s ease-in-out;
+  }
+
+  .menu li {
+    margin: 2em;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .fa-bars {
+    font-size: 1.5em;
+    margin-top: -.2em;
+  }
+
+  .toggle-menu .fa-close {
+    font-size: 1.7em;
+    display: none;
+  }
+
+  .main,
+  .sobre-mi {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main img {
+    width: min(70%, 350px);
+    height: auto;
+  }
+
+  .info-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-content .sotial-networks,
+  .info-content__subtitle {
+    display: block;
+  }
+
+  .info-content__subtitle {
+    margin-bottom: .5em;
+  }
+
+  .info-content .sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .info-content__p,
+  .contact-section__img {
+    display: none;
+  }
+  .contact-section{
+    display: inline-block;
+  }
+  .form-group {
+    width: 80vw;
+
+  }
+
+}

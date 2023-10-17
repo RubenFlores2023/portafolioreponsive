@@ -12,24 +12,24 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="conten-menu">
-              <input type="checkbox" id="check">
-              <label for="check" class="icon-menu"></label>
-              <h2>Magtimus</h2>
-              <img src="img/1.jpg" alt="">
-              <nav class="menu">
-                <ul>
-                  <li><a href="#" class="icon-home">INICIO</a></li>
-                  <li><a href="#" class="icon-reply">SERVICIOS</a></li>
-                  <li><a href="#" class="icon-star-empty">PRODUCTOS</a></li>
-                  <li><a href="#" class="icon-search">BLOG</a></li>
-                  <li><a href="#" class="icon-male">CONTACTOS</a></li>
-                </ul>
-              </nav>
-            </div>
+            <nav class="navbar">
+              <div class="brand">
+                <h2>Mi<span> Portafolio</span></h2>
+              </div>
+              <ul class="menu" id="menu">
+                <li><a href="#inicio"  class="active">Inicio</a></li>
+                <li><a href="#quien">Quien Soy</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+              <div class="toggle-menu">
+                <i class="fas fa-bars" id="toggle_open"></i>
+                <i class="fas fa-close" id="toggle_close"></i>
+              </div>
+            </nav>
           </header>
           
-        <div class="main">
+        <div class="main" id="inicio">
             <div class="info-content">
                 <h1>Soy Ruben Flores Lima</h1>
                 <p>
@@ -62,84 +62,85 @@
                 class="bank"> <button class="download-cv">Mas sobre mi</button></a>
         </div>
     </div>
-    <div class="portfolio" id="portafolio">
-        <div class="portfolio-heading">
-            <h2>Mi Portfolio</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="container">
-            <div class="card">
-                <div class="card-img">
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio-heading">
+                <h2>Mi Portfolio</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="card-img">
+                    </div>
+                    <div class="card__title">
+                        <h2>Diseño de Páginas WEB</h2>
+                    </div>
+                    <div class="card__proyect-links">
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-globe-asia"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="button-content">
+                        <a download
+                            href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                            class="bank"> <button class="download-cv">Contactanos</button></a>
+                    </div>
                 </div>
-                <div class="card__title">
-                    <h2>Diseño de Páginas WEB</h2>
+                <div class="card">
+                    <div class="card-img">
+                    </div>
+                    <div class="card__title">
+                        <h2>Diseño de Base de DATOS</h2>
+                    </div>
+                    <div class="card__proyect-links">
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-globe-asia"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="button-content">
+                        <a download
+                            href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                            class="bank"> <button class="download-cv">Contactanos</button></a>
+                    </div>
                 </div>
-                <div class="card__proyect-links">
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-globe-asia"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                </div>
-                <div class="button-content">
-                    <a download
-                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
-                        class="bank"> <button class="download-cv">Contactanos</button></a>
+                <div class="card">
+                    <div class="card-img">
+                    </div>
+                    <div class="card__title">
+                        <h2>Maquetacion WEB</h2>
+                    </div>
+                    <div class="card__proyect-links">
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-globe-asia"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="button-content">
+                        <a download
+                            href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
+                            class="bank"> <button class="download-cv">Contactanos</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-img">
-                </div>
-                <div class="card__title">
-                    <h2>Diseño de Base de DATOS</h2>
-                </div>
-                <div class="card__proyect-links">
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-globe-asia"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                </div>
-                <div class="button-content">
-                    <a download
-                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
-                        class="bank"> <button class="download-cv">Contactanos</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                </div>
-                <div class="card__title">
-                    <h2>Maquetacion WEB</h2>
-                </div>
-                <div class="card__proyect-links">
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-globe-asia"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                </div>
-                <div class="button-content">
-                    <a download
-                        href="https://api.whatsapp.com/send/?phone=59177112930&text&type=phone_number&app_absent=0"
-                        class="bank"> <button class="download-cv">Contactanos</button></a>
-                </div>
-            </div>
+    
         </div>
 
-    </div>
 
     <div class="contact-section" id="contacto">
         <div class="contact-heading">
@@ -147,7 +148,7 @@
             <div class="divider"></div>
         </div>
         <div class="container-contact">
-            <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png"
+            <img class="contact-section__img" src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png"
                 alt="">
             <div class="contact-form">
                 <h4>Enviame un Mensaje</h4>
@@ -175,6 +176,8 @@
                 class="bank"></a><i class="fa-brands fa-whatsapp"></i>
         </div>
     </footer>
+
+    <script src="scrip.js"></script>
 </body>
 
 </html>
