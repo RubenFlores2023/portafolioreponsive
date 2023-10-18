@@ -418,6 +418,8 @@
 .sotial-networks i {
   font-size: 1.5em;
 }
+
+
 /* RESPONSIVE*/
 
 @media screen and (max-width: 800px) {
@@ -433,6 +435,7 @@
     z-index: 100;
     transform: translateX(-110%);
     transition: all .5s ease-in-out;
+
   }
 
   .show-menu {
